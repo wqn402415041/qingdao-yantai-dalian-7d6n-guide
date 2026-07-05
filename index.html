@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>青岛烟台大连7天6晚攻略</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-band">
+      <div class="hero-copy">
+        <p class="kicker">2026.07.06 - 07.12</p>
+        <h1>福州出发青岛烟台大连7天6晚</h1>
+        <p class="lead">厦航 08:55 福州起飞，11:15 到青岛胶东。青岛住五四广场小麦岛桔子水晶，先走东海岸，再走老城、八大关和第二海水浴场，第三天只留啤酒博物馆后转烟台。</p>
+        <div class="hero-meta" aria-label="核心安排">
+          <span>厦航早班机</span>
+          <span>华住会酒店</span>
+          <span>三城不绕路</span>
+          <span>每站可导航</span>
+        </div>
+      </div>
+      <figure class="route-visual" aria-label="青岛烟台大连七天路线示意">
+        <img src="./assets/qyd-route.svg" alt="青岛烟台大连七天六晚路线示意图">
+      </figure>
+    </section>
+
+    <section class="map-band" id="nav-map">
+      <div class="section-head">
+        <p class="kicker">Map</p>
+        <h2>可导航路线</h2>
+      </div>
+      <div class="route-day-switch" role="tablist" aria-label="选择导航路线">
+        <button class="route-day-button active" type="button" data-route-day="day1" aria-selected="true">7/6 青岛</button>
+        <button class="route-day-button" type="button" data-route-day="day2" aria-selected="false">7/7 青岛</button>
+        <button class="route-day-button" type="button" data-route-day="day3" aria-selected="false">7/8 转烟台</button>
+        <button class="route-day-button" type="button" data-route-day="day4" aria-selected="false">7/9 烟台</button>
+        <button class="route-day-button" type="button" data-route-day="day5" aria-selected="false">7/10 大连</button>
+        <button class="route-day-button" type="button" data-route-day="day6" aria-selected="false">7/11 大连</button>
+        <button class="route-day-button" type="button" data-route-day="day7" aria-selected="false">7/12 返程</button>
+      </div>
+      <div class="nav-map-shell">
+        <div class="route-map-card">
+          <div class="route-map" id="routeMap" aria-label="当天路线地图"></div>
+        </div>
+        <ol class="nav-stops" id="navStops"></ol>
+      </div>
+    </section>
+
+    <section class="planner-band" id="planner">
+      <div class="section-head">
+        <p class="kicker">Route</p>
+        <h2>每天动线</h2>
+      </div>
+      <div class="day-tabs" role="tablist" aria-label="选择日期">
+        <button class="day-tab active" type="button" data-day="day1" role="tab" aria-selected="true">D1 7/6</button>
+        <button class="day-tab" type="button" data-day="day2" role="tab" aria-selected="false">D2 7/7</button>
+        <button class="day-tab" type="button" data-day="day3" role="tab" aria-selected="false">D3 7/8</button>
+        <button class="day-tab" type="button" data-day="day4" role="tab" aria-selected="false">D4 7/9</button>
+        <button class="day-tab" type="button" data-day="day5" role="tab" aria-selected="false">D5 7/10</button>
+        <button class="day-tab" type="button" data-day="day6" role="tab" aria-selected="false">D6 7/11</button>
+        <button class="day-tab" type="button" data-day="day7" role="tab" aria-selected="false">D7 7/12</button>
+      </div>
+      <div id="dayPanels"></div>
+    </section>
+
+    <section class="food-band">
+      <div class="section-head">
+        <p class="kicker">Food</p>
+        <h2>每天怎么吃</h2>
+      </div>
+      <div class="food-grid" id="foodGrid"></div>
+    </section>
+
+    <section class="transport-band">
+      <div class="section-head">
+        <p class="kicker">Traffic</p>
+        <h2>交通安排</h2>
+      </div>
+      <div class="transport-grid">
+        <article><h3>去程航班</h3><p><strong>7月6日 08:55</strong> 福州长乐国际机场起飞，<strong>11:15</strong> 到青岛胶东国际机场。建议 07:00 前到机场。</p></article>
+        <article><h3>青岛到烟台</h3><p>7月8日啤酒博物馆后去青岛站或青岛北站，优先选到烟台站，离所城里和朝阳街更近。</p></article>
+        <article><h3>烟台到大连</h3><p>7月10日按船班去烟台港或指定码头，提前确认码头、船名、安检和到港码头。</p></article>
+        <article><h3>大连返福州</h3><p>7月12日只安排市区收尾，去周水子机场预留 2.5-3 小时。</p></article>
+      </div>
+    </section>
+
+    <section class="hotel-band">
+      <div class="section-head">
+        <p class="kicker">Hotel</p>
+        <h2>华住会酒店</h2>
+      </div>
+      <div class="hotel-list" id="hotelList"></div>
+    </section>
+
+    <section class="sources-band">
+      <div class="section-head">
+        <p class="kicker">Notes</p>
+        <h2>执行提醒</h2>
+      </div>
+      <div class="source-list">
+        <p>青岛 D1 已提前放入石老人海水浴场、海之恋公园、小麦岛公园和五四广场；D2 加入圣弥额尔大教堂、鲁迅公园、八大关和第二海水浴场；D3 只留青岛啤酒博物馆。</p>
+        <p>众品老方子锅贴甜沫放在 D1 加餐、D2 早市后补漏，D3 午餐也保留为啤酒博物馆后的轻松选择。</p>
+        <p>车次、船班、航班价格和酒店价格会实时变化，正式下单前以官方页面为准。</p>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
