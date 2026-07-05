@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">青岛烟台大连7天6晚路线示意</title>
+  <desc id="desc">从福州飞青岛，经烟台轮渡到大连，再从大连返程的路线示意图。</desc>
+  <rect width="920" height="520" rx="28" fill="#fbfbf8"/>
+  <path d="M120 345 C230 250 315 220 435 205 C555 190 655 235 785 145" fill="none" stroke="#247d74" stroke-width="14" stroke-linecap="round" opacity=".22"/>
+  <path d="M185 355 C300 325 365 270 455 250 C560 226 655 248 752 205" fill="none" stroke="#c75b39" stroke-width="8" stroke-linecap="round" opacity=".78"/>
+  <path d="M455 250 C525 286 596 320 700 336" fill="none" stroke="#b8841f" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 14" opacity=".78"/>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">
+    <circle cx="142" cy="360" r="26" fill="#247d74"/><text x="142" y="368" text-anchor="middle" fill="#fff" font-size="18">福州</text>
+    <circle cx="415" cy="246" r="30" fill="#c75b39"/><text x="415" y="254" text-anchor="middle" fill="#fff" font-size="18">青岛</text>
+    <circle cx="573" cy="286" r="30" fill="#5f7c3b"/><text x="573" y="294" text-anchor="middle" fill="#fff" font-size="18">烟台</text>
+    <circle cx="718" cy="336" r="30" fill="#b8841f"/><text x="718" y="344" text-anchor="middle" fill="#fff" font-size="18">大连</text>
+  </g>
+  <g fill="#16201c" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="70" y="70" font-size="34" font-weight="850">福州出发青岛烟台大连</text>
+    <text x="72" y="108" font-size="18" fill="#66716c">7月6日 - 7月12日 · 厦航早班机 · 华住会酒店 · 每站可导航</text>
+    <text x="365" y="185" font-size="16" fill="#66716c">青岛2晚</text>
+    <text x="535" y="232" font-size="16" fill="#66716c">烟台2晚</text>
+    <text x="690" y="386" font-size="16" fill="#66716c">大连2晚</text>
+    <text x="455" y="318" font-size="14" fill="#66716c">轮渡</text>
+  </g>
+</svg>
